@@ -10,7 +10,7 @@
 	let videoComponent: HTMLVideoElement;
 
 	onMount( async () => {
-		var manifestUri = 'https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd';
+		const manifestUri = 'https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd';
 		const player = new shaka.Player(videoComponent);
 		player.addEventListener('error', e => console.error(e));
 
