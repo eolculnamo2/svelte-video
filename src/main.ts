@@ -5,9 +5,7 @@ const entryPoint = process.env.IS_PROD ? document.getElementById('svelte-video')
 
 const app = new App({
 	target: entryPoint,
-	props: {
-		name: 'world'
-	}
+	props: {}
 });
 
 export default app;
