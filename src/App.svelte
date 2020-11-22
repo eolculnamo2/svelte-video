@@ -24,24 +24,19 @@
 </script>
 
 <!-- svelte-ignore a11y-media-has-caption -->
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-	<div class="video-container" bind:this={videoContainer}>
-		<video 
-			width="640"
-			class="shaka-video"
-			bind:this={videoComponent}
-			autoplay
-			controls
-			poster="//shaka-player-demo.appspot.com/assets/poster.jpg"
-		/>
-		{#if textOverlay}
-			<Text text={textOverlay} />
-		{/if}
-	</div>
-</main>
-
+<div class="video-container" bind:this={videoContainer}>
+  <video 
+    width="640"
+    class="shaka-video"
+    bind:this={videoComponent}
+    autoplay
+    controls
+    poster="//shaka-player-demo.appspot.com/assets/poster.jpg"
+  />
+  {#if textOverlay}
+    <Text text={textOverlay} />
+  {/if}
+</div>
 <style>
 	main {
 		text-align: center;
