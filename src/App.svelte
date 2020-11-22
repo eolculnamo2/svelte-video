@@ -4,7 +4,7 @@
 	import Text from './components/overlays/Text.svelte';
 
 	export let name: string;
-	export let textOverlay: string = "Test Text Overlay";
+	export let textOverlay: string = "Test Text Overlay!";
 	
 	let videoContainer: HTMLDivElement;
 	let videoComponent: HTMLVideoElement;
